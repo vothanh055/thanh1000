@@ -1,0 +1,13 @@
+@mixin f-space {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@mixin position-center($class) {
+    .#{$class}{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+    }
+}
